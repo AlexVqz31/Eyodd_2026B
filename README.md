@@ -1,4 +1,9 @@
+![itgam banner](/resources/pleca_itgam.jpg)
+
+
 # Eyodd_2026B
+
+
 repositorio estructura y organizacion de bases de datos, semestre 2026B
 ## Descripción
 
