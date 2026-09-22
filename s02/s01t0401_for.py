@@ -18,4 +18,15 @@ sum = 0
 
 #ciclo for
 for number in range(1,n+1):
-    print(str(number) + " ")
+    sum = sum + number 
+    # l: sum <- 0 + 1
+    # sum = 1
+    # 2: sum <- 1 + 2 
+    # sum = 3 
+    # 3: sum <- 3 +3 
+    # ...
+    # 100: SUM : <- sum_(-1) + 100
+print(f"la suma de 1 hasta {n} es: {sum}")
+
+timestamp_02 = time.time()
+print(f"Tiempo de ejecución: {(timestamp_02 - timestamp_01) * 1e6:.2f} μs")
