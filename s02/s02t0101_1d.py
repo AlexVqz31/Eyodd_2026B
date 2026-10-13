@@ -1,26 +1,41 @@
-#importando el modulo arrays
-from array import array as arr
+# Array
+# from array import *
+import array as arr
 
-#creando un array de enteros
-#i: entero con signo
-#I: entero sin signo
-#f: numero decimal
-#d: numer odecimal doble
-#u caracteres umicodes 
-my_array = arr('i', [200, 300, 400, 500,600, 700, 800, 900, 1000]) # O(1)
+# Creacion de arreglo
+# i: Entero con signo
+# I: Entero sin signo
+# f: Número decimal
+# d: Número decimal doble
+# u: Carácteres unicode
+my_array = arr.array('i', [10,22,300,3,7,10,22,42,32,17]) 
 
-# iteracion automatica 
-for num in my_array: 
-    print(num)
+# Impresion automática
+# for num in my_array: 
+#    print(num)
 
-#accso individual a elementos 
-print(my_array[0])
-print(my_array[1])
-print(my_array[2])
+# Acceso individual a los elementos
+# print(my_array[0]) # Primer elemento
+# print(my_array[1]) # Segundo elemento
+# print(my_array[2]) # Tercer elemento
 
+# Tamaño de un arreglo
+# Length 
+# print(len(my_array))
 
-print(len(my_array))
+# Iteracion por indice
+# for i in range(len(my_array)):
+#     if my_array[i] % 2 == 0:
+#         print(f"El elemento num {i+1}:{my_array[i]}")
 
-for i in range(len(my_array)):
-    if my_array[i] % 2 == 0:
-     print(f"elememto {i+1}: {my_array{i}}") 
+#Busqueda de un elemento
+
+num_to_search = 42
+
+my_array[7]= 200
+
+try:
+    print(f"Localizacion {num_to_search}: {my_array.index(num_to_search)}")
+except :
+    print(f"Elemento no encontrado")
+    
