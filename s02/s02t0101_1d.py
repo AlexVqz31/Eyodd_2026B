@@ -38,4 +38,8 @@ try:
     print(f"Localizacion {num_to_search}: {my_array.index(num_to_search)}")
 except :
     print(f"Elemento no encontrado")
-    
+
+try:
+ my_array[100]= 3
+except:
+    print("Indice fuera de rango")
